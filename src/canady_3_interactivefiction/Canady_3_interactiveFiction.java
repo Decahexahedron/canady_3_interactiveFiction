@@ -13,7 +13,7 @@ public class Canady_3_interactiveFiction {
     static String input;
 
     public static void main(String[] args) {//#while
-        while (play) {  //the while loop with boolean allows me to end end the game
+        while (play) {  //the while loop with the boolean allows me to start/end the game
                         //by setting it to false, or repeating otherwise
             game();
         }
@@ -35,6 +35,10 @@ public class Canady_3_interactiveFiction {
             car();
         } else if (input.contains("keep") || input.contains("walk")) { //WALK START
             walk();//each method leads to another, most of my 30ish methods are just node and choice
+        }
+        else{
+            wrong();
+            game();
         }
     }
 
