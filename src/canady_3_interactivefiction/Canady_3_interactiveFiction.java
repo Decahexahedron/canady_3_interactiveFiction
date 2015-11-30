@@ -17,19 +17,17 @@ public class Canady_3_interactiveFiction {
                         //by setting it to false, or repeating otherwise
             game();
         }
-    }//END OF MAIN CLASS
+    }
 
     public static void game() { //#method1
                                  //this is just the beginning/intro that starts the method train
         System.out.println(
-                "You are walking home from work.\n"
+                "You are walking home from work.\n"//#hero ??maybe??
                 + "A row of stores is on your left.\n"
                 + "From the corner of your eye, \n"
-                + "you spot a scary-looking guy several meters behind you.\n"
+                + "you spot a scary-looking guy several meters behind you.\n"//#enemyobject ????
                 + "He is definitely following you.\n"
                 + "Keep walking, or go to your car?");
-//        start = true;
-//        while (start) {
         input = sc.nextLine().toLowerCase();
         if (input.contains("car")) { //CAR START
             car();
